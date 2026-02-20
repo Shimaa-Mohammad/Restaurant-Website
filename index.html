@@ -1,0 +1,433 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google-width -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=REM:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" class="logo">
+                <img src="./imgs/logo.png" alt="Restaurant logo">
+
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" id="open"></i>
+        <i class="fa-solid fa-xmark" id="close"></i>
+    </nav>
+
+    <main>
+        <section id="home">
+            <article>
+                <h2>Experience Flavor Like Never Before</h2>
+                <p>Welcome to a place where every dish is
+                    crafted with passion and the freshest ingredients. From timeless
+                    classics to modern culinary creations
+                </p>
+                <button>View Menu</button>
+            </article>
+        </section>
+
+        <section id="about">
+            
+            <div class="heading">
+                <h1>About Us</h1>
+            </div>
+            <div class="about-section">
+                <div class="about-image">
+                    <img src="./imgs/about.webp">
+                </div>
+                <article>
+                    <h2>At our restaurant, food is more than a meal — it’s an experience</h2>
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        We are passionate about creating unforgettable dining experiences.
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Our dishes are prepared using fresh, high-quality ingredients.
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        We combine authentic recipes with modern culinary creativity.
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-circle-check"></i>
+                        We provide a warm and welcoming atmosphere for everyone.
+                    </span>
+                  
+                </article>
+            </div>
+        </section>
+        <!-- ----------------------------------- -->
+        <section id="menu" class="menu-section">
+             <div class="heading">
+                 <h1>Menu</h1>
+                 <p >discover our Menu</p>
+            </div>
+            <div class="menu-buttons">
+                   
+                <button data-name="all-receipes" class="active">All Receipes</button>
+                <button data-name="breakfast">Breakfast</button>
+                <button data-name="lunch">Lunch</button>
+                <button data-name="dinner">Dinner</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="menu-card" data-category="breakfast">
+                    <img src="./imgs/pancakes.jpg" alt="Pancakes">
+                    <div class="menu-info">
+                        <h3>Pancake Stack</h3>
+                        <p class="price">$8</p>
+                        <p>Buttery pancakes with maple syrup.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="breakfast">
+                    <img src="./imgs/omlette.webp" alt="Omelette">
+                    <div class="menu-info">
+                        <h3>Herb Omelette</h3>
+                        <p class="price">$9</p>
+                        <p>Fluffy eggs with fresh herbs.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="breakfast">
+                    <img src="./imgs/Egg Muffins.jpg" alt="Egg Muffins">
+                    <div class="menu-info">
+                        <h3>Egg Muffins</h3>
+                        <p class="price">$12</p>
+                        <p>Whisk eggs with veggies, cooked bacon or sausage, and cheese..</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="breakfast">
+                    <img src="./imgs/Peanut Butter Banana Smoothie.webp" alt="Peanut Butter Banana Smoothie">
+                    <div class="menu-info">
+                        <h3>Peanut Butter Banana Smoothie</h3>
+                        <p class="price">$8</p>
+                        <p>Smoothie made with peanut butter, banana, and milk.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="lunch">
+                    <img src="./imgs/salad.jpg" alt="Salad">
+                    <div class="menu-info">
+                        <h3>Caesar Salad</h3>
+                        <p class="price">$10</p>
+                        <p>Crisp romaine, parmesan, house dressing.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="lunch">
+                    <img src="./imgs/Molokhia with Chicken.jpeg" alt="Molokhia with Chicken">
+                    <div class="menu-info">
+                        <h3>Molokhia with Chicken</h3>
+                        <p class="price">$14</p>
+                        <p>Traditional Egyptian soup with tender chicken.</p>
+                    </div>
+                </article>
+
+
+                <article class="menu-card" data-category="lunch">
+                    <img src="./imgs/Mahshi (Stuffed Vegetables).jpg" alt="Mahshi (Stuffed Vegetables)">
+                    <div class="menu-info">
+                        <h3>Mahshi (Stuffed Vegetables)</h3>
+                        <p class="price">$14</p>
+                        <p>Traditional Egyptian stuffed vegetables with rice and herbs.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="lunch">
+                    <img src="./imgs/burger.webp" alt="Burger">
+                    <div class="menu-info">
+                        <h3>Classic Burger</h3>
+                        <p class="price">$12</p>
+                        <p>Beef patty, cheddar, pickles, fries.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dinner">
+                    <img src="./imgs/steak.jpg" alt="Steak">
+                    <div class="menu-info">
+                        <h3>Grilled Steak</h3>
+                        <p class="price">$18</p>
+                        <p>Served with roasted vegetables.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dinner">
+                    <img src="./imgs/seafoodPasta.jpg" alt="Pasta">
+                    <div class="menu-info">
+                        <h3>Seafood Pasta</h3>
+                        <p class="price">$16</p>
+                        <p>Shrimp, clams, garlic-tomato sauce.</p>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-category="dinner">
+                    <img src="./imgs/Pan-Seared Salmon with Garlic Butter.jpg"
+                        alt="Pan-Seared Salmon with Garlic Butter">
+                    <div class="menu-info">
+                        <h3>Pan-Seared Salmon with Garlic Butter</h3>
+                        <p class="price">$16</p>
+                        <p>Grilled salmon with garlic butter sauce.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- events -->
+        <section id="events">
+ <div class="heading">
+                <h1>Events</h1>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper" id="cards">
+
+                    <div class="swiper-slide ">
+                        <img src="./imgs/Birthday Party.jpg">
+                        <article>
+                            <h4>custom Parties</h4>
+                            <h2 class="event-price">889$</h2>
+                            <p>Special occasions and celebrations tailored to your needs.</p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/custom parties.jpg">
+                        <article>
+                            <h4>Birthday Parties</h4>
+                            <h2 class="event-price">889$</h2>
+                            <p>Special occasions and celebrations tailored to your needs.</p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/Wedding Party.jpg">
+                        <article>
+                            <h4>Wedding Parties</h4>
+                            <h2 class="event-price">889$</h2>
+                            <p>Special occasions and celebrations tailored to your needs.</p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/family party.jpg">
+                        <article>
+                            <h4>Family Parties</h4>
+                            <h2 class="event-price">889$</h2>
+                            <p>Special occasions and celebrations tailored to your needs.</p>
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/custom parties.jpg">
+                        <article>
+                            <h4>Corporate Events</h4>
+                            <h2 class="event-price">889$</h2>
+                            <p>Professional gatherings and team-building activities.</p>
+
+                        </article>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+
+            </div>
+        </section>
+
+
+        <section id="chefs">
+             <div class="heading">
+                <h1>Chefs</h1>
+                <p>Meet our Chefs</p>
+            </div>
+            <div class="chef-content">
+                <figure>
+                    <img src="./imgs/chef1.jpg">
+                    <figcaption>
+                        <h2>Walter white</h2>
+                        <p>Main Chef</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./imgs/chef2.jpg">
+                    <figcaption>
+                        <h2>Walter white</h2>
+                    
+                        <p>President of Sales</p>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./imgs/chef3.jpg">
+                    <figcaption>
+                        <h2>Walter white</h2>
+                       
+                        <p>Chef Manager</p>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <section id="gallery">
+             <div class="heading">
+                <h1>Gellery</h1>
+            </div>
+            <div class="swiper swiperGellery">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery1.avif">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery2.jpg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery3.avif">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery4.jpg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery5.jpg">
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery6.jpg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery1.avif">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery7.jpeg">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./imgs/gellery8.avif">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+     <section id="contactUs">
+         <div class="heading">
+                <h1>Contact US</h1>
+            </div>
+        <div class="contact-content">
+           <h2>Meet our Experts Chefs</h2>
+          <form>
+  <div class="date-time">
+    <div class="form-group">
+      <label for="date">Select Date</label>
+      <input type="date" id="date">
+    </div>
+
+    <div class="form-group">
+      <label for="time">Select Time</label>
+      <input type="time" id="time">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="service">Type of Service</label>
+    <input type="text" id="service">
+  </div>
+
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message"></textarea>
+  </div>
+  <button>Book A table</button>
+</form>
+</div>
+        </div>
+     </section>
+
+    
+
+    </main>
+      <footer id="footer-con">
+            <div class="footer-details">
+            
+                <div class="details2">
+                    <h2  class="footer-h2">About</h2>
+                    <ul>
+                <li>Fredock one</li>
+                <li>Special Dish</li>
+                <li>Reservaition</li>
+                <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="details2 reserve">
+                    <h2  class="footer-h2">Menu</h2>
+                    <ul>
+                <li>Fredock one</li>
+                <li>Special Dish</li>
+                <li>Reservaition</li>
+                <li>Contact</li>
+                    </ul>
+                </div>
+
+                  <div class="details2 ">
+                    <h2 class="footer-h2">Newletter</h2>
+                    <form>
+                      <input type="email" placeholder="Enter Your Email">
+                      <div class="button-container">
+
+                          <button>Subscribe</button>
+                      </div>
+                      </form>
+                </div>
+            </div>
+  
+        <div class="footer-end">
+            <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer> 
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
